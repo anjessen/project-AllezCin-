@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "form.css">
+    <script defer src = "form.js"></script>
+    <title>Mon site - Connexion</title>
+</head>
+
+<body>
+    <button id="btnPopup" class="btnPopup">Afficher Popup</button>
+    <div id="overlay" class="overlay">
+        <div id="popup" class="popup">
+            <form>
+                <h1>Formulaire d'inscription
+                <span id="btnClose" class="btnClose">×</span>
+                </h1>
+            <p>
+                <label for="courriel">Courriel</label> :
+                <input type="email" name="courriel" id="courriel" required placeholder="utilisateur@domaine.fr">
+                <span id="aideCourriel"></span>
+            </p>
+            <p>
+                <label for="mdp">Mot de passe</label> :
+                <input type="password" name="mdp" id="mdp" required>
+                <span id="aideMdp"></span>
+            </p>
+
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Annuler">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
