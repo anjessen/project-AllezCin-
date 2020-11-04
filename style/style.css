@@ -3,11 +3,6 @@
 @import 'media-queries.css';
 @import 'style2.css';
 
-body {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-}
 
 h1 {
    margin-left: 4rem;
@@ -30,6 +25,78 @@ img {
     width: 100%;
 
 }
+
+ul {
+    list-style: none;
+    
+}
+
+.release {
+    padding-right: 10%;
+}
+
+.movies {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.review-movies{
+    padding-right: 20%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+
+}
+
+.newsletter{
+    margin-left: auto;
+    margin-right: auto;
+    width: 8rem;
+}
+
+.input {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.menu-footer{
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    width: 70%;
+    
+}
+
+.menu-footer h3 {
+    border-bottom: 1px white solid;
+    font-size: 1rem;
+}
+
+.social-media{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    width: 8rem;
+}
+
+.btn-social-media {
+    display : flex;
+    
+}
+
+i {
+    padding: 1rem;
+}
+  
+
+
+
+
+
+
 
 
 
