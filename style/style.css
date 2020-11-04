@@ -19,11 +19,13 @@ h1 {
 }
 
 .content-banner{
-    position: absolute;
+    position: relative;
+
 }
 
 img {
     position: absolute;
+
 }
 
 
