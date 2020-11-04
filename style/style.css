@@ -24,10 +24,10 @@ h1 {
 }
 
 img {
+    filter: brightness(30%);
     position: absolute;
     height: 25rem;
     width: 100%;
-
 
 }
 
