@@ -1,6 +1,7 @@
 @import 'variables.css';
 @import 'base.css';
 @import 'media-queries';
+@import 'style2.css';
 
 body {
     padding-left: 0.5rem;
@@ -8,19 +9,21 @@ body {
     padding-top: 0.5rem;
 }
 
-header
-{
-    background: red;
-    height: 200px;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    
-}
-
 h1 {
    margin-left: 4rem;
    color: red;
+}
+
+.banniere {
+    width: 9rem;
+}
+
+.content-banner{
+    position: absolute;
+}
+
+img {
+    position: absolute;
 }
 
 
