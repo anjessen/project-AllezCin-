@@ -7,15 +7,14 @@
     color: var(--text);
     font-family: var(--font-family);
   }
-  
+
 h2,
 h3,
 h4 {
   margin-bottom: 2rem;
 }
 
-h1 {
-  margin: 4rem;  
+h1 {  
   font-size: 3.5rem;
 }
 
