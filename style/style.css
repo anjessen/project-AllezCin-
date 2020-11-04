@@ -1,6 +1,6 @@
 @import 'variables.css';
 @import 'base.css';
-@import 'media-queries';
+@import 'media-queries.css';
 @import 'style2.css';
 
 body {
@@ -25,6 +25,9 @@ h1 {
 
 img {
     position: absolute;
+    height: 25rem;
+    width: 100%;
+
 
 }
 
