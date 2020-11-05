@@ -37,8 +37,6 @@ a{
     background:#DE4277;top:10rem
 }
     
-
-
 h1 {
    margin-left: 4rem;
    color: red;
@@ -125,6 +123,25 @@ footer {
 i {
     padding: 1rem;
 }
+
+#featured .container{
+    margin-top:3rem;text-align:center
+}
+#featured h2::after{
+    width:9rem;
+    border-radius:1rem;
+    height:.4rem;background:#eaeaea;
+    display:block;
+    margin:0 auto
+}
+#featured .next{
+    margin-top:2rem;
+    cursor:pointer;
+    display:flex;
+    gap:2rem;
+    justify-content:center
+}
+
   
 
 

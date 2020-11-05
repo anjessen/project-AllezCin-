@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <script src = './script/index.js></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Ciné</title>
@@ -12,43 +13,45 @@
 <body>
     
   <!-- Main / Jumbotron -->
-    <div class="banniere"></div>
-            <img src = "./img/Film.jpg">
-                <div class="content-banner">
-                    <h1><span style="color: red;">Allez</span><span style="color: white;">Cine</span></h1>  
-                    <div class="text-white text-center rgba-stylish-strong py-5 px-4">
-                            <div class="py-5">
-                    <h2><span style="color: red;">LATEST</span> <span style="color:white;">ON</span><span style="color: red;">LINE </span><span style="color: red;">MO</span><span style="color: white;">VIES</span></h2>
-                    <p class="mb-4 pb-2 px-md-5 mx-md-5"><span style="color: white;"><strong> NO ONE CAN HEAR YOU SCREAM</strong></span> </p>
-                    <a href="" class="btn btn-dark"><h3 style="color: white;" >Watch trailer</h3></a>
-                
-                            </div>
+        <div class="banniere"></div>
+                <img src = "./img/Film.jpg">
+                    <div class="content-banner">
+                        <h1><span style="color: red;">Allez</span><span style="color: white;">Cine</span></h1>  
+                        <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                                <div class="py-5">
+                        <h2><span style="color: red;">LATEST</span> <span style="color:white;">ON</span><span style="color: red;">LINE </span><span style="color: red;">MO</span><span style="color: white;">VIES</span></h2>
+                        <p class="mb-4 pb-2 px-md-5 mx-md-5"><span style="color: white;"><strong> NO ONE CAN HEAR YOU SCREAM</strong></span> </p>
+                        <a href="" class="btn btn-dark"><h3 style="color: white;" >Watch trailer</h3></a>
+                    
+                                </div>
                         </div>
-               </div>
-    </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="..." alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Four slide">
-          </div>
+                </div>
         </div>
-        
-      </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel" data-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/Birds.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/t2.jpg" alt="Un tigre">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/t3.jpg" alt="Un tigre">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/t3.jpg" alt="Un tigre">
+                </div>
+                </div>
+            </div>
+            
+        </div>
 
     <div class="bg-dark" style="height: 2rem;">
             <div class="container">
@@ -92,12 +95,19 @@
         
     </div>
     
-    <section class = "featured movies">
+    
+        <div id="featured">
+            <div class="container">
         <h2>FEATURED MOVIES</h2>
-        <section class ='box-film'>
+            <div class="next">
+                    <p id="featuredPrev">Previous</p>
+                    <p id="featuredNext">Next</p>
+                    
+                </div>
+            </div>
             
-        </section>
-    </section>
+        </div>
+        
     <footer>
         <section class="newsletter">
             <p class = "suscribe">SUSCRIBE TO US</p>
