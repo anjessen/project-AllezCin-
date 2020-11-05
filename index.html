@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style/style.css" />
-    <script src = './script/index.js></script>
+    <link rel="stylesheet" type="text/css" href="./style/style.css"/>
+    <script src = "./script/index.js"></script>
+    <script src="./script/slide.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Ciné</title>
@@ -14,8 +17,8 @@
     
   <!-- Main / Jumbotron -->
         <div class="banniere"></div>
-                <img src = "./img/Film.jpg">
-                    <div class="content-banner">
+                  <img name="slide" width="400" height="200" />  
+                <div class="content-banner">
                         <h1><span style="color: red;">Allez</span><span style="color: white;">Cine</span></h1>  
                         <div class="text-white text-center rgba-stylish-strong py-5 px-4">
                                 <div class="py-5">
@@ -25,31 +28,8 @@
                     
                                 </div>
                         </div>
-                </div>
-        </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel" data-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="./img/Birds.jpg" alt="">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/t2.jpg" alt="Un tigre">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/t3.jpg" alt="Un tigre">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/t3.jpg" alt="Un tigre">
-                </div>
-                </div>
-            </div>
+                    </div>
+                    
             
         </div>
 
@@ -96,17 +76,19 @@
     </div>
     
     
-        <div id="featured">
-            <div class="container">
-        <h2>FEATURED MOVIES</h2>
-            <div class="next">
+            <div id="featured">
+                
+                <div class="container">
+                    <h2>FEATURED MOVIES</h2> 
+                <div class="next">
                     <p id="featuredPrev">Previous</p>
                     <p id="featuredNext">Next</p>
                     
                 </div>
+                </div>
             </div>
-            
-        </div>
+
+       
         
     <footer>
         <section class="newsletter">

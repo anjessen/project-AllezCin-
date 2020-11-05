@@ -13,13 +13,28 @@ a{
     text-decoration:none
 }
 .container{
-    max-width:110rem;margin:0 auto;padding:0 2rem
+    max-width:110rem;
+    margin:0 auto;
+    padding:0 2rem
 }
 .social-icons{
-    position:fixed;z-index:1000;top:15vh
+    position:fixed;
+    z-index:1000;
+    top:15vh
 }
 .social-icons .social{
-    cursor:pointer;width:12rem;position:absolute;left:-10rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;color:#fff;padding:1rem 1rem;border-top-right-radius:5rem;border-bottom-right-radius:5rem;transition:all .3s ease
+    cursor:pointer;
+    width:12rem;
+    position:absolute;
+    left:-10rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:#fff;
+    border-top-right-radius:2rem;
+    border-bottom-right-radius:2rem;
+    padding-left: 4rem;
+    transition:all .3s ease
 }
 .social-icons .social i{
     font-size:2rem
@@ -31,10 +46,10 @@ a{
 .social-icons .twitter{
     background:#209AE9
 }.social-icons .facebook{
-    background:#405E92;top:5rem
+    background:#405E92;top:3rem
 }
 .social-icons .instagram{
-    background:#DE4277;top:10rem
+    background:#DE4277;top:6rem
 }
     
 h1 {
@@ -112,7 +127,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
-    width: 8rem;
+    width: 2rem;
 }
 
 .btn-social-media {
@@ -142,6 +157,14 @@ i {
     justify-content:center
 }
 
+.slide{
+        width: 150px;
+}
+
+.Photos {
+    width: 100px;
+    height: 100px;
+}
   
 
 
