@@ -1,18 +1,19 @@
 const API_KEY = '143998c72c162901544b826be11c98ad';
 
-const URL = 'https://api.themoviedb.org/3/movie/550?api_key=143998c72c162901544b826be11c98ad';
-const movieBox = document.querySelector('.movie-box');
+const url = 'https://api.themoviedb.org/3/movie/550?api_key=143998c72c162901544b826be11c98ad';
 
 
-fetch(URL)
-    .then((res) => res.json())
-    .then((data) => {
-        console.log('data: ', data);
-    })
-    .catch((error) => {
-        console.log('Error: ', error);
-    });
-console.log('Values: ', value);
+async function getMovies() {
+    const resp = await fetch(url);
+    const respData = await resp.json();
+
+    console.log(respData);
+
+    return respData;
+}
+
+getMovies();
+
 
 
 
