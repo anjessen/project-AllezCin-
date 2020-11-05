@@ -3,12 +3,8 @@
 @import 'media-queries.css';
 @import 'style2.css';
 
-
 html{
-    font-size:62.5%;scroll-behavior:smooth
-}
-body{
-    font-size:1.6rem;font-family:"Baloo Tamma 2",sans-serif;background:#232323;color:#eee
+    font-size:84%;scroll-behavior:smooth
 }
 ul{
     list-style:none
@@ -23,10 +19,10 @@ a{
     position:fixed;z-index:1000;top:15vh
 }
 .social-icons .social{
-    cursor:pointer;width:12rem;position:absolute;left:-10rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;color:#fff;padding:1rem 2rem;border-top-right-radius:5rem;border-bottom-right-radius:5rem;transition:all .3s ease
+    cursor:pointer;width:12rem;position:absolute;left:-10rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;color:#fff;padding:1rem 1rem;border-top-right-radius:5rem;border-bottom-right-radius:5rem;transition:all .3s ease
 }
 .social-icons .social i{
-    font-size:2.5rem
+    font-size:2rem
 }
 .social-icons 
 .social:hover{
