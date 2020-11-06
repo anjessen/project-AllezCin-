@@ -36,7 +36,7 @@ let counter = 0;
         document.getElementById('trend-movies').innerHTML += `
         <div class="trend-movies-box">
         <div class="trend-movies-card">
-            <img class="card-img-top" src="img/Venom.jpg" alt="Card image cap">
+            <img class="card-img-top" src="img/Venom.jpg"  alt="Card image cap " >
             <div class="card-body">
                 <h5 class="card-title">Venom</h5>
                 <p class="card-text">2016</p>
@@ -45,6 +45,7 @@ let counter = 0;
         </div>
     </div>`;
         counter++;
+        
     }
 }
 displayTrendCards();
