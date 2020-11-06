@@ -182,7 +182,15 @@ h1 {
 
 #trend-movies {
     display : flex;
-    margin: 1rem;
+
+}
+
+.trend-movies-box {
+    padding: 1%;
+}
+
+.img-trend-movies{
+    width: 100%;
 }
 
 

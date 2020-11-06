@@ -27,7 +27,7 @@ const displayTrendCard = async () => {
                     document.getElementById('trend-movies').innerHTML += `
                     <div class="trend-movies-box">
                     <div class="trend-movies-card">
-                    <img src="${img_url + data.results[counter].poster_path}">
+                    <img class="img-trend-movies" src="${img_url + data.results[counter].poster_path}">
                     <div class="card-body">
                     <h3 class="card-title">Venom</h3>
                     <p class="card-text">2016</p>
