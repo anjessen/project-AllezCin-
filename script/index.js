@@ -31,8 +31,8 @@ function moviePoster(movies) {
 }
 
 function displayTrendCards(){
-    //let counter = 0;
-   //while (counter <= 6) {
+let counter = 0;
+   while (counter <= 6) {
         document.getElementById('trend-movies').innerHTML += `
         <div class="trend-movies-box">
         <div class="trend-movies-card">
@@ -44,7 +44,7 @@ function displayTrendCards(){
             </div>
         </div>
     </div>`;
-        //counter++;
-    //}
+        counter++;
+    }
 }
 displayTrendCards();
