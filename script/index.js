@@ -48,4 +48,6 @@ let counter = 0;
         
     }
 }
+
+
 displayTrendCards();
