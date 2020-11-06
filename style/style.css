@@ -70,12 +70,18 @@ h1 {
 
 }
 
-img {
+.img-jumbotron {
     filter: brightness(50%);
     position: absolute;
     height: 25rem;
     width: 100%;
 
+}
+
+/*trend-cart*/
+
+#trend-movies {
+    display : flex;
 }
 
 ul {
@@ -170,6 +176,9 @@ i {
     width: 100px;
     height: 100px;
 }
+
+
+
 
 
   
