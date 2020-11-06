@@ -29,9 +29,9 @@ const displayTrendCard = async () => {
                     <div class="trend-movies-card">
                     <img class="img-trend-movies" src="${img_url + data.results[counter].poster_path}">
                     <div class="card-body">
-                    <h3 class="card-title">Venom</h3>
-                    <p class="card-text">2016</p>
-                    <p class="card-text">genre</p>
+                    <h3 class="card-title">${data.results[counter].title}</h3>
+                    <p class="card-text">${data.results[counter].release_date}</p>
+                    <p class="card-text">${data.results[counter].genre_ids}</p>
                 </div>
             </div>
         </div>`;
