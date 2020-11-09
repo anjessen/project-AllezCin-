@@ -26,16 +26,12 @@ function arrGenre(genderId, gender){
     return genreArr
 };
 
-const getPopularMovies = () => {
-    return new Promise((res, rej) => {
-        return fetch(urlPopularMovie, urlPopularMovie2, urlPopularMovie3)
-            .then((data) => data.json())
-            .then((data) => res(data))
-            .catch((e) => {
-                console.log(e);
-                rej(e);
-            });
-    });
+const getPopularMovies = async () => {
+    return Promise.all([
+            fetch(urlPopularMovie).then(resp => resp.json()),
+            fetch(urlPopularMovie2).then(resp => resp.json()),
+            fetch(urlPopularMovie3).then(resp => resp.json()),
+          ])
 };
 
 const getTrendMovies = () => {
@@ -87,7 +83,6 @@ const displayTrendCard = async () => {
     } catch (e) {
         console.log(e);
     }
-   
 };
 displayTrendCard();
 
@@ -96,7 +91,12 @@ const displayFeatureCard = async () => {
     try {
         const gender = await getGenderMovies();
         const featured = await getPopularMovies();
-        console.log(dataFeatured);
+        let newFeatured= [];
+        //newFeatured = featured[0].results;
+        newFeatured = newFeatured.concat(featured[0].results)
+        newFeatured = newFeatured.concat(featured[1].results);
+        newFeatured = newFeatured.concat(featured[2].results);
+        console.log(newFeatured)
         let counter = 0;
                 while (counter <= 11) {
                     const genderId = data.results[counter].genre_ids;
@@ -118,35 +118,3 @@ const displayFeatureCard = async () => {
     }
 };
 displayFeatureCard();
-
-
-
-
-/*function getTrendMovies(){
-    const promesse = fetch(urlTrendMovie);
-    promesse 
-        .then(async response => {
-            try {
-                data = await response.json();
-                let counter = 0;
-                while (counter <= 6) {
-                    document.getElementById('trend-movies').innerHTML += `
-                    <div class="trend-movies-box">
-                    <div class="trend-movies-card">
-                    <img src= <img src=${img_url + data.results[counter].poster_path}data-movie-id=${data.results[counter].id}/>
-                    <div class="card-body">
-                    <h3 class="card-title">Venom</h3>
-                    <p class="card-text">2016</p>
-                    <p class="card-text">genre</p>
-                </div>
-            </div>
-        </div>`;
-            counter++;
-            }
-            }
-             catch (e){
-                console.log(e);
-            }
-        })
-        .catch(err => console.log(err));
-}*/
