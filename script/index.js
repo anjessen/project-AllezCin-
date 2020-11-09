@@ -59,6 +59,7 @@ const displayTrendCard = async () => {
     } catch (e) {
         console.log(e);
     }
+   
 };
 displayTrendCard();
 

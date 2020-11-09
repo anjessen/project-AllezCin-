@@ -4,17 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./style/style.css"/>
     <script defer src = "./script/index.js"></script>
     <script src="./script/slide.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Ciné</title>
 </head>
 <body>
-    
+     <!-- The Modal -->
+     <div class="modal" id="modalRegister">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Register</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="registerIdentifiant">Name</label>
+                            <input type="name" class="form-control" id="registerIdentifiant" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="registerEmail">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp"
+                                placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="registerConfirmPassword">Confirm password</label>
+                            <input type="password" class="form-control" id="registerConfirmPassword"
+                                placeholder="Confirm password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="RegisterTOS">
+                            <label class="form-check-label" for="RegisterTOS">Terms of Service</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="register()">Register</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- The Modal -->
+    <div class="modal" id="modalLogin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginIdentifiant">Identifiant</label>
+                            <input type="name" class="form-control" id="loginIdentifiant" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="loginStayConnected">
+                            <label class="form-check-label" for="loginStayConnected">stay connected</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="login()">Login</button>
+                        <button type="submit" class="btn btn-primary">Create an account</button>
+                        <button type="submit" class="btn btn-primary">Forgot password</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="contactUs">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="conteneur-fluid">
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="form-group col-12 col-sm-12 col-lg-6 mb-6">
+                                    <input type="name" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-lg-6 mb-6">
+                                    <input type="name" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-12 col-sm-12 col-lg-6 mb-6">
+                                    <input type="email" class="form-control" id="registerEmail"
+                                        aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-lg-6 mb-6">
+                                    <input type="password" class="form-control" id="registerPassword"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" data-target="#contactUs">Send
+                        message</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
   <!-- Main / Jumbotron -->
         <div class="banniere"></div>
@@ -47,8 +176,8 @@
                             <li><a href="#genres-movie">Fantasy</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Sign In</a></li>
+                    <li><a id="register" data-toggle="modal" data-target="#modalRegister" href="#">Register</a></li>
+                    <li><a id="login" data-toggle="modal" data-target="#modalLogin" href="#">Login</a></li>
                     <div class="search">
                         <i class="fa fa-search"></i>
                         <form action="">
@@ -76,6 +205,7 @@
     </div>
     
     <div id = "trend-movies">
+      
     
     </div>
 
