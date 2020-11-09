@@ -21,7 +21,6 @@ function arrGenre(genderId, gender){
     return genreArr
 };
 
-
 const getTrendMovies = () => {
     return new Promise((res, rej) => {
         return fetch(urlTrendMovie)
