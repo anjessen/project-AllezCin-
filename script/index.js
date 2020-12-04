@@ -99,14 +99,14 @@ const displayFeatureCard = async () => {
         console.log(newFeatured)
         let counter = 0;
                 while (counter <= 11) {
-                    const genderId = data.results[counter].genre_ids;
-                    document.querySelector('featured-movies').innerHTML += `
+                    const genderId = newFeatured[counter].genre_ids;
+                    document.querySelector('#featured-movies').innerHTML += `
                             <div class="movies-box">
                             <div class="movies-card">
-                            <img class="img-movies" src="${img_url + data.results[counter].poster_path}">
+                            <img class="img-movies" src="${img_url + newFeatured[counter].poster_path}">
                             <div class="card-body">
-                            <h3 class="card-title">${data.results[counter].title}</h3>
-                            <p class="card-text">${data.results[counter].release_date.slice(0,4)}</p>
+                            <h3 class="card-title">${newFeatured[counter].title}</h3>
+                            <p class="card-text">${newFeatured[counter].release_date.slice(0,4)}</p>
                             <p class="card-text">${arrGenre(genderId, gender.genres)}</p>
                             </div>
                             </div>
